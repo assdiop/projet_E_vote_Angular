@@ -1,0 +1,31 @@
+<div class="min-h-screen bg-gray-50">
+    <!-- Sidebar -->
+    <aside class="fixed left-0 top-0 h-screen w-64 bg-white shadow-lg">
+      <div class="flex h-16 items-center justify-center border-b">
+        <h1 class="text-xl font-bold text-blue-600">Admin Dashboard</h1>
+      </div>
+      
+      <nav class="p-4">
+        <div class="space-y-2">
+          <a routerLink="./elections" class="flex items-center rounded-lg px-4 py-2 text-gray-600 hover:bg-gray-50">
+            <i class="fas fa-vote-yea mr-3"></i>
+            Gérer les Élections
+          </a>
+          <a routerLink="./users" class="flex items-center rounded-lg px-4 py-2 text-gray-600 hover:bg-gray-50">
+            <i class="fas fa-users mr-3"></i>
+            Gérer les Utilisateurs
+          </a>
+          <a routerLink="./reports" class="flex items-center rounded-lg px-4 py-2 text-gray-600 hover:bg-gray-50">
+            <i class="fas fa-chart-bar mr-3"></i>
+            Rapports
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="ml-64 p-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+`
